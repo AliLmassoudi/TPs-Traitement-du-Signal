@@ -56,4 +56,7 @@
 
   • 3 • On spécifie une nouvelle longuer pour le signal :
 
-  
+  ```
+  |  sound(w,2*fs);
+  |  plot(x);
+  ```
