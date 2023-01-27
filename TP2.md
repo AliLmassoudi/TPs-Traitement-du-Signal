@@ -62,26 +62,37 @@
   |   close all
   |   clc
   |   
+  |   % Fréquence d'échantillonnage
   |   fe=8192;
+  |   
+  |   % Vecteur temps
   |   t=0:1/fe:1;
   |   
-  |   freqA = 440;   
-  |   freqDOL = 262; 
-  |   freqRE = 294;
-  |   freqM = 330;
-  |   freqFA = 349;
-  |   freqSOL = 392;
-  |   freqSI = 494;
-  |   F_do2 = 523;
-  |   
+  |   % Générer la forme d'onde sinusoidale pour la note "Do1"
+  |.  % le nombre 262 par exemple dans ce cas represente la fréquence de la note Do1
   |   Do1=sin(2*pi*262*t);
+  |   
+  |   % Générer la forme d'onde sinusoidale pour la note "Re"
   |   Re=sin(2*pi*294*t);
+  |   
+  |   % Générer la forme d'onde sinusoidale pour la note "Mi"
   |   Mi=sin(2*pi*330*t);
+  |   
+  |   % Générer la forme d'onde sinusoidale pour la note "Fa"
   |   Fa=sin(2*pi*t*349);
+  |   
+  |   % Générer la forme d'onde sinusoidale pour la note "Sol"
   |   Sol=sin(2*pi*t*392);
+  |   
+  |   % Générer la forme d'onde sinusoidale pour la note "La"
   |   La=sin(2*pi*t*440);
+  |   
+  |   % Générer la forme d'onde sinusoidale pour la note "Si"
   |   Si=sin(2*pi*t*494);
+  |   
+  |   % Générer la forme d'onde sinusoidale pour la note "Do2"
   |   Do2=sin(2*pi*t*523);
   |   
+  |   % Créer un tableau "G" qui contient les notes 
   |   G=[Do1 Re Mi Fa Sol La Si Do2];
   ```
